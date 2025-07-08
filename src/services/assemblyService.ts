@@ -7,7 +7,7 @@ class AssemblyService {
 
   constructor() {
     this.client = new AssemblyAI({
-      apiKey: "244965ec60ea44fda4704374939b823c",
+      apiKey: process.env.ASSEMBLYAI_API_KEY || "",
     });
   }
 
